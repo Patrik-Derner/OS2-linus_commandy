@@ -66,14 +66,12 @@ chmod +x ./user_management.sh
 cd
 mkdir archive
 mkdir backup
-cd var/log
-man tar
+cd /var/log
 tar cvf ~/archive/log.tar *.log
-cd ~
+cd
 tar tf ./archive/log.tar
 cd backup/
 tar xvf ~/archive/log.tar
-ls
 
 ---------
 | LAB D |
