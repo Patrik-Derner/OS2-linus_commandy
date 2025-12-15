@@ -1,14 +1,17 @@
 ---------
 | LAB A |
 ---------
-cd /
-mkdir ------
-groupadd ------
-useradd -m -s /bin/bash -g groupname user
+su root
+cd /     (možná)
+mkdir ------     (vytvoří directory)
+groupadd ------     (vytvoří groupy)
+useradd -m -s /bin/bash -g groupname user     (vytvoří usery pod groupama)
 chown groupAdmin:group folder
 chmod 1770 filename
-echo "This file contains confidentail information for the department > filePath/fileName.txt
+echo "This file contains confidentail information for the department > filePath/document.txt
 chown groupAdmin:group fileName
+chmod 740 folder/document.txt     (v případě)
+
 
 <--- user creation lab, chtěl vypsat skupiny, uživatele a vidět práva adresáře --->
 getent passwd / getent groups 
