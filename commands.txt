@@ -78,7 +78,7 @@ tar xvf ~/archive/log.tar
 ---------
 cat /etc/services
 pwd
-cut -d' ' -f1 /etc/services | cut -f1 | sort -u -b | grep '^[a-zA-]' > ./uniqueservices.txt && wc -l uniqueservices.txt
+cut -d' ' -f1 /etc/services | cut -f1 | sort -u -b | grep '^[a-zA-Z]' > ./uniqueservices.txt && wc -l uniqueservices.txt
 cat uniqueservices.txt
 head uniqueservices.txt
 tail uniqueservices.txt
